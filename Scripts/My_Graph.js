@@ -51,8 +51,32 @@ var data = {
     }, {
       x: 1755,
       y: 5.99
+    }, {
+      x: 1760,
+      y: 6.33
+    }, {
+      x: 1780,
+      y: 7.54
+    }, {
+      x: 1800,
+      y: 8.87
     }],
     fill: false
+  }, {
+    label: "Switzerland",
+    backgroundColor: window.chartColors.orange,
+    borderColor: window.chartColors.orange,
+    fill: false,
+    data: [{
+      x: 1600,
+      y: 1
+    }, {
+      x: 1700,
+      y: 1.2
+    }, {
+      x: 1800,
+      y: 1.65
+    }]
   }]
 }
 
@@ -63,7 +87,7 @@ var options = {
     text: 'Social Science Demography Graph'
   },
   tooltips: {
-    mode: 'index',
+    mode: 'x',
     intersect: false,
   },
   hover: {
@@ -88,45 +112,9 @@ var options = {
     }]
   }
 }
+//This block initializes the html canvas to a Chart js object
 var myLineChart = new Chart(ctx, {
   type: 'line',
   data: data,
   options: options
 });
-/* var myChart = new Chart(ctx, {
-  type: 'bar',
-  data: {
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-    datasets: [{
-      label: '# of Votes',
-      data: [12, 19, 3, 5, 2, 3],
-      backgroundColor: [
-        'rgba(255, 99, 132, 0.2)',
-        'rgba(54, 162, 235, 0.2)',
-        'rgba(255, 206, 86, 0.2)',
-        'rgba(75, 192, 192, 0.2)',
-        'rgba(153, 102, 255, 0.2)',
-        'rgba(255, 159, 64, 0.2)'
-      ],
-      borderColor: [
-        'rgba(255, 99, 132, 1)',
-        'rgba(54, 162, 235, 1)',
-        'rgba(255, 206, 86, 1)',
-        'rgba(75, 192, 192, 1)',
-        'rgba(153, 102, 255, 1)',
-        'rgba(255, 159, 64, 1)'
-      ],
-      borderWidth: 1
-    }]
-  },
-  options: {
-    scales: {
-      yAxes: [{
-        ticks: {
-          beginAtZero: true
-        }
-      }]
-    }
-  }
-});
-*/

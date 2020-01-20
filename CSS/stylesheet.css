@@ -1,4 +1,4 @@
 .chartBox {
-  width: 600;
-  height: 400;
+  max-width: 800;
+  max-height: 500;
 }
