@@ -1,9 +1,11 @@
 window.chartColors = {
   red: 'rgb(255, 99, 132)',
+  brit_red: 'rgb(208, 12, 39)',
   orange: 'rgb(255, 159, 64)',
   yellow: 'rgb(255, 205, 86)',
   green: 'rgb(75, 192, 192)',
   blue: 'rgb(54, 162, 235)',
+  brit_blue: 'rgb(0, 31, 126)',
   purple: 'rgb(153, 102, 255)',
   grey: 'rgb(201, 203, 207)'
 };
@@ -12,8 +14,8 @@ var ctx = document.getElementById('myChart');
 var data = {
   datasets: [{
     label: 'England',
-    backgroundColor: window.chartColors.red,
-    borderColor: window.chartColors.red,
+    backgroundColor: window.chartColors.brit_blue,
+    borderColor: window.chartColors.brit_red,
     data: [{
       x: 500,
       y: 0.5
