@@ -199,6 +199,45 @@ var data = {
       x: 1990,
       y: 181.4
     }]
+  }, {
+    label: "India",
+    backgroundColor: window.chartColors.grey,
+    borderColor: window.chartColors.grey,
+    fill: false,
+    data: [{
+      x: 1901,
+      y: 238.4
+    }, {
+      x: 1911,
+      y: 252.1
+    }, {
+      x: 1921,
+      y: 251.3
+    }, {
+      x: 1931,
+      y: 279.0
+    }, {
+      x: 1941,
+      y: 318.7
+    }, {
+      x: 1951,
+      y: 361.1
+    }, {
+      x: 1961,
+      y: 439.2
+    }, {
+      x: 1971,
+      y: 548.2
+    }, {
+      x: 1981,
+      y: 683.3
+    }, {
+      x: 1991,
+      y: 846.4
+    }, {
+      x: 2000,
+      y: 1028.7
+    }]
   }]
 }
 
