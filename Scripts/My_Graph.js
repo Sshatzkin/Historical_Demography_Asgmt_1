@@ -81,6 +81,7 @@ var data = {
     backgroundColor: window.chartColors.blue,
     borderColor: window.chartColors.blue,
     fill: false,
+    hidden: true,
     data: [{
       x: 88,
       y: 45
@@ -180,6 +181,7 @@ var data = {
     backgroundColor: window.chartColors.yellow,
     borderColor: window.chartColors.yellow,
     fill: false,
+    hidden: true,
     data: [{
       x: 1930,
       y: 60
@@ -204,6 +206,7 @@ var data = {
     backgroundColor: window.chartColors.grey,
     borderColor: window.chartColors.grey,
     fill: false,
+    hidden: true,
     data: [{
       x: 1901,
       y: 238.4
@@ -237,6 +240,31 @@ var data = {
     }, {
       x: 2000,
       y: 1028.7
+    }]
+  }, {
+    label: "Ottoman Empire",
+    backgroundColor: window.chartColors.green,
+    borderColor: window.chartColors.red,
+    fill: false,
+    hidden: true,
+    data: [{
+      x: 1520,
+      y: 11.6
+    }, {
+      x: 1566,
+      y: 15
+    }, {
+      x: 1683,
+      y: 30
+    }, {
+      x: 1831,
+      y: 27.2
+    }, {
+      x: 1856,
+      y: 35.4
+    }, {
+      x: 1881,
+      y: 17.4
     }]
   }]
 }
