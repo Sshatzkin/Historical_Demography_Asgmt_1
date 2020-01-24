@@ -77,7 +77,30 @@ var data = {
       x: 1800,
       y: 1.65
     }]
+  }, {label: "China",
+  backgroundColor: window.chartColors.blue,
+  borderColor: window.chartColors.blue,
+  fill: false,
+  data: [{
+    x: 88,
+    y: 45
+  }, {
+    x: 108,
+    y: 55
+  }, {
+    x: 156,
+    y: 64
+  }, {
+    x: 606,
+    y: 46
+  }, {
+    x: 705,
+    y: 37
+  }, {
+    x: 755,
+    y: 53
   }]
+}]
 }
 
 var options = {
