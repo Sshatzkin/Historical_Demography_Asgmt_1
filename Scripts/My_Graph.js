@@ -100,6 +100,64 @@ var data = {
     x: 755,
     y: 53
   }]
+  }, {label: "Senegal",
+  backgroundColor: window.chartColors.purple,
+  borderColor: window.chartColors.purple,
+  fill: false,
+  data: [{
+    x: 1950,
+    y: 2.49
+  }, {
+    x: 1955,
+    y: 2.8
+  }, {
+    x: 1960,
+    y: 3.2
+  }, {
+    x: 1965,
+    y: 3.6
+  }, {
+    x: 1970,
+    y: 4.26
+  }, {
+    x: 1980,
+    y: 5.6
+  }, {
+    x: 1990,
+    y: 7.756
+  }, {
+    x: 2000,
+    y: 9.8
+  }]
+}, {label: "Argentina",
+backgroundColor: window.chartColors.purple,
+borderColor: window.chartColors.purple,
+fill: false,
+data: [{
+  x: 1950,
+  y: 17
+}, {
+  x: 1955,
+  y: 18.78
+}, {
+  x: 1960,
+  y: 20.5
+}, {
+  x: 1965,
+  y: 3.6
+}, {
+  x: 1970,
+  y: 4.26
+}, {
+  x: 1980,
+  y: 5.6
+}, {
+  x: 1990,
+  y: 7.756
+}, {
+  x: 2000,
+  y: 9.8
+}]
 }]
 }
 
