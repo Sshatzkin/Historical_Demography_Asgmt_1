@@ -10,8 +10,7 @@ window.chartColors = {
 
 var ctx = document.getElementById('myChart');
 var data = {
-  datasets: [
-    {
+  datasets: [{
     label: 'England',
     backgroundColor: window.chartColors.red,
     borderColor: window.chartColors.red,
@@ -77,88 +76,106 @@ var data = {
       x: 1800,
       y: 1.65
     }]
-  }, {label: "China",
-  backgroundColor: window.chartColors.blue,
-  borderColor: window.chartColors.blue,
-  fill: false,
-  data: [{
-    x: 88,
-    y: 45
   }, {
-    x: 108,
-    y: 55
+    label: "China",
+    backgroundColor: window.chartColors.blue,
+    borderColor: window.chartColors.blue,
+    fill: false,
+    data: [{
+      x: 88,
+      y: 45
+    }, {
+      x: 108,
+      y: 55
+    }, {
+      x: 156,
+      y: 64
+    }, {
+      x: 606,
+      y: 46
+    }, {
+      x: 705,
+      y: 37
+    }, {
+      x: 755,
+      y: 53
+    }]
   }, {
-    x: 156,
-    y: 64
+    label: "Senegal",
+    backgroundColor: window.chartColors.purple,
+    borderColor: window.chartColors.purple,
+    fill: false,
+    data: [{
+      x: 1950,
+      y: 2.49
+    }, {
+      x: 1955,
+      y: 2.8
+    }, {
+      x: 1960,
+      y: 3.2
+    }, {
+      x: 1965,
+      y: 3.6
+    }, {
+      x: 1970,
+      y: 4.26
+    }, {
+      x: 1980,
+      y: 5.6
+    }, {
+      x: 1990,
+      y: 7.756
+    }, {
+      x: 2000,
+      y: 9.8
+    }]
   }, {
-    x: 606,
-    y: 46
-  }, {
-    x: 705,
-    y: 37
-  }, {
-    x: 755,
-    y: 53
+    label: "Argentina",
+    backgroundColor: window.chartColors.purple,
+    borderColor: window.chartColors.purple,
+    fill: false,
+    data: [{
+      x: 1550,
+      y: 0.34
+    }, {
+      x: 1650,
+      y: 0.3
+    }, {
+      x: 1778,
+      y: 0.42
+    }, {
+      x: 1800,
+      y: 0.55
+    }, {
+      x: 1825,
+      y: 0.766
+    }, {
+      x: 1857,
+      y: 1.3
+    }, {
+      x: 1869,
+      y: 1.9
+    }, {
+      x: 1895,
+      y: 4.1
+    },  {
+      x: 1914,
+      y: 8.2
+    }, {
+      x: 1950,
+      y: 17
+    }, {
+      x: 1955,
+      y: 18.78
+    }, {
+      x: 1960,
+      y: 20.5
+    }, {
+      x: 1980,
+      y: 28
+    }]
   }]
-  }, {label: "Senegal",
-  backgroundColor: window.chartColors.purple,
-  borderColor: window.chartColors.purple,
-  fill: false,
-  data: [{
-    x: 1950,
-    y: 2.49
-  }, {
-    x: 1955,
-    y: 2.8
-  }, {
-    x: 1960,
-    y: 3.2
-  }, {
-    x: 1965,
-    y: 3.6
-  }, {
-    x: 1970,
-    y: 4.26
-  }, {
-    x: 1980,
-    y: 5.6
-  }, {
-    x: 1990,
-    y: 7.756
-  }, {
-    x: 2000,
-    y: 9.8
-  }]
-}, {label: "Argentina",
-backgroundColor: window.chartColors.purple,
-borderColor: window.chartColors.purple,
-fill: false,
-data: [{
-  x: 1950,
-  y: 17
-}, {
-  x: 1955,
-  y: 18.78
-}, {
-  x: 1960,
-  y: 20.5
-}, {
-  x: 1965,
-  y: 3.6
-}, {
-  x: 1970,
-  y: 4.26
-}, {
-  x: 1980,
-  y: 5.6
-}, {
-  x: 1990,
-  y: 7.756
-}, {
-  x: 2000,
-  y: 9.8
-}]
-}]
 }
 
 var options = {
