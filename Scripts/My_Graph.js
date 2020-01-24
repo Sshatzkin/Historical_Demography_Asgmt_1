@@ -175,6 +175,30 @@ var data = {
       x: 1980,
       y: 28
     }]
+  }, {
+    label: "Indonesia",
+    backgroundColor: window.chartColors.yellow,
+    borderColor: window.chartColors.yellow,
+    fill: false,
+    data: [{
+      x: 1930,
+      y: 60
+    }, {
+      x: 1950,
+      y: 69
+    }, {
+      x: 1960,
+      y: 87.8
+    }, {
+      x: 1970,
+      y: 114.7
+    }, {
+      x: 1980,
+      y: 147.4
+    }, {
+      x: 1990,
+      y: 181.4
+    }]
   }]
 }
 
