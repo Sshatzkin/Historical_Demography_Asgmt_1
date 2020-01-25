@@ -1,21 +1,102 @@
 window.chartColors = {
   red: 'rgb(255, 99, 132)',
-  brit_red: 'rgb(208, 12, 39)',
   orange: 'rgb(255, 159, 64)',
   yellow: 'rgb(255, 205, 86)',
   green: 'rgb(75, 192, 192)',
   blue: 'rgb(54, 162, 235)',
-  brit_blue: 'rgb(0, 31, 126)',
   purple: 'rgb(153, 102, 255)',
-  grey: 'rgb(201, 203, 207)'
+  grey: 'rgb(201, 203, 207)',
+  white: 'rgb(255,255,255)',
+  brit_red: 'rgb(208, 12, 39)',
+  brit_blue: 'rgb(0, 31, 126)',
+  china_red: 'rgb(223, 36, 7)',
+  china_gold: 'rgb(255, 223, 0)',
+  arg_blue: 'rgb(117, 170, 219)',
+  ind_orange: 'rgb(255, 153, 51)',
+  ind_green: 'rgb(19, 136, 8)',
+  indo_red: 'rgb(255, 0, 0)',
+  turk_red: 'rgb(200, 16, 46)',
+  senegal_green: 'rgb(0, 133, 64)',
+  senegal_yellow: 'rgb(253, 239, 66)'
 };
 
 var ctx = document.getElementById('myChart');
 var data = {
   datasets: [{
+    label: "Argentina",
+    backgroundColor: window.chartColors.white,
+    borderColor: window.chartColors.arg_blue,
+    fill: false,
+    data: [{
+      x: 1550,
+      y: 0.34
+    }, {
+      x: 1650,
+      y: 0.3
+    }, {
+      x: 1778,
+      y: 0.42
+    }, {
+      x: 1800,
+      y: 0.55
+    }, {
+      x: 1825,
+      y: 0.766
+    }, {
+      x: 1857,
+      y: 1.3
+    }, {
+      x: 1869,
+      y: 1.9
+    }, {
+      x: 1895,
+      y: 4.1
+    }, {
+      x: 1914,
+      y: 8.2
+    }, {
+      x: 1950,
+      y: 17
+    }, {
+      x: 1955,
+      y: 18.78
+    }, {
+      x: 1960,
+      y: 20.5
+    }, {
+      x: 1980,
+      y: 28
+    }]
+  }, {
+    label: "China",
+    backgroundColor: window.chartColors.china_gold,
+    borderColor: window.chartColors.china_red,
+    fill: false,
+    hidden: true,
+    data: [{
+      x: 88,
+      y: 45
+    }, {
+      x: 108,
+      y: 55
+    }, {
+      x: 156,
+      y: 64
+    }, {
+      x: 606,
+      y: 46
+    }, {
+      x: 705,
+      y: 37
+    }, {
+      x: 755,
+      y: 53
+    }]
+  }, {
     label: 'England',
     backgroundColor: window.chartColors.brit_blue,
     borderColor: window.chartColors.brit_red,
+    borderDash: [8, 8],
     data: [{
       x: 500,
       y: 0.5
@@ -64,149 +145,9 @@ var data = {
     }],
     fill: false
   }, {
-    label: "Switzerland",
-    backgroundColor: window.chartColors.orange,
-    borderColor: window.chartColors.orange,
-    fill: false,
-    data: [{
-      x: 1600,
-      y: 1
-    }, {
-      x: 1700,
-      y: 1.2
-    }, {
-      x: 1800,
-      y: 1.65
-    }]
-  }, {
-    label: "China",
-    backgroundColor: window.chartColors.blue,
-    borderColor: window.chartColors.blue,
-    fill: false,
-    hidden: true,
-    data: [{
-      x: 88,
-      y: 45
-    }, {
-      x: 108,
-      y: 55
-    }, {
-      x: 156,
-      y: 64
-    }, {
-      x: 606,
-      y: 46
-    }, {
-      x: 705,
-      y: 37
-    }, {
-      x: 755,
-      y: 53
-    }]
-  }, {
-    label: "Senegal",
-    backgroundColor: window.chartColors.purple,
-    borderColor: window.chartColors.purple,
-    fill: false,
-    data: [{
-      x: 1950,
-      y: 2.49
-    }, {
-      x: 1955,
-      y: 2.8
-    }, {
-      x: 1960,
-      y: 3.2
-    }, {
-      x: 1965,
-      y: 3.6
-    }, {
-      x: 1970,
-      y: 4.26
-    }, {
-      x: 1980,
-      y: 5.6
-    }, {
-      x: 1990,
-      y: 7.756
-    }, {
-      x: 2000,
-      y: 9.8
-    }]
-  }, {
-    label: "Argentina",
-    backgroundColor: window.chartColors.purple,
-    borderColor: window.chartColors.purple,
-    fill: false,
-    data: [{
-      x: 1550,
-      y: 0.34
-    }, {
-      x: 1650,
-      y: 0.3
-    }, {
-      x: 1778,
-      y: 0.42
-    }, {
-      x: 1800,
-      y: 0.55
-    }, {
-      x: 1825,
-      y: 0.766
-    }, {
-      x: 1857,
-      y: 1.3
-    }, {
-      x: 1869,
-      y: 1.9
-    }, {
-      x: 1895,
-      y: 4.1
-    },  {
-      x: 1914,
-      y: 8.2
-    }, {
-      x: 1950,
-      y: 17
-    }, {
-      x: 1955,
-      y: 18.78
-    }, {
-      x: 1960,
-      y: 20.5
-    }, {
-      x: 1980,
-      y: 28
-    }]
-  }, {
-    label: "Indonesia",
-    backgroundColor: window.chartColors.yellow,
-    borderColor: window.chartColors.yellow,
-    fill: false,
-    hidden: true,
-    data: [{
-      x: 1930,
-      y: 60
-    }, {
-      x: 1950,
-      y: 69
-    }, {
-      x: 1960,
-      y: 87.8
-    }, {
-      x: 1970,
-      y: 114.7
-    }, {
-      x: 1980,
-      y: 147.4
-    }, {
-      x: 1990,
-      y: 181.4
-    }]
-  }, {
     label: "India",
-    backgroundColor: window.chartColors.grey,
-    borderColor: window.chartColors.grey,
+    backgroundColor: window.chartColors.ind_green,
+    borderColor: window.chartColors.ind_orange,
     fill: false,
     hidden: true,
     data: [{
@@ -244,9 +185,35 @@ var data = {
       y: 1028.7
     }]
   }, {
+    label: "Indonesia",
+    backgroundColor: window.chartColors.white,
+    borderColor: window.chartColors.indo_red,
+    pointStyle: 'rect',
+    fill: false,
+    hidden: true,
+    data: [{
+      x: 1930,
+      y: 60
+    }, {
+      x: 1950,
+      y: 69
+    }, {
+      x: 1960,
+      y: 87.8
+    }, {
+      x: 1970,
+      y: 114.7
+    }, {
+      x: 1980,
+      y: 147.4
+    }, {
+      x: 1990,
+      y: 181.4
+    }]
+  }, {
     label: "Ottoman Empire",
-    backgroundColor: window.chartColors.green,
-    borderColor: window.chartColors.red,
+    backgroundColor: window.chartColors.white,
+    borderColor: window.chartColors.turk_red,
     fill: false,
     hidden: true,
     data: [{
@@ -268,6 +235,52 @@ var data = {
       x: 1881,
       y: 17.4
     }]
+  }, {
+    label: "Senegal",
+    backgroundColor: window.chartColors.senegal_yellow,
+    borderColor: window.chartColors.senegal_green,
+    fill: false,
+    data: [{
+      x: 1950,
+      y: 2.49
+    }, {
+      x: 1955,
+      y: 2.8
+    }, {
+      x: 1960,
+      y: 3.2
+    }, {
+      x: 1965,
+      y: 3.6
+    }, {
+      x: 1970,
+      y: 4.26
+    }, {
+      x: 1980,
+      y: 5.6
+    }, {
+      x: 1990,
+      y: 7.756
+    }, {
+      x: 2000,
+      y: 9.8
+    }]
+  }, {
+    label: "Switzerland",
+    backgroundColor: window.chartColors.white,
+    borderColor: window.chartColors.indo_red,
+    pointStyle: 'cross',
+    fill: false,
+    data: [{
+      x: 1600,
+      y: 1
+    }, {
+      x: 1700,
+      y: 1.2
+    }, {
+      x: 1800,
+      y: 1.65
+    }]
   }]
 }
 
@@ -284,6 +297,11 @@ var options = {
   hover: {
     mode: 'nearest',
     interserct: true
+  },
+  legend: {
+    labels: {
+      usePointStyle: true
+    }
   },
   scales: {
     xAxes: [{
